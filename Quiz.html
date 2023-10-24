@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Wuiz</title>
+    <link rel="stylesheet" href="css/padrao.css">
+    <link rel="shortcut icon" href="imagens2/logo.png" type="image/x-icon">
+</head>
+<body id="bodyQuiz">
+    <h1 id="title">Teste de hoje</h1>
+    <div id="quiz-container">
+        <div class="questions">
+            <h2 id="question"></h2>
+            <ol type="A">
+                <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+                <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+                <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+                <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+            </ol>
+            <h4 id="stat"></h4>
+        </div>
+
+        <div class="buttons1">
+            <button type="button" class="next">Next</button>
+        </div>
+
+    </div>
+    <div id="scoreboard">
+
+        <img src="imagens/logo.png" id="imglogo">
+
+        <h2 id="score-title">Pontuação</h2>
+        <h2 id="score"></h2>
+        <p><button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button></p>
+        <button type="button" id="check-answer" onclick="checkAnswer()">Check</button>
+    </div>
+    <div id="answerBank">
+        <h2>Respostas:</h2>
+        <ol type="1" id="answers">
+
+        </ol>
+        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+    </div>
+
+    <script src="javascript/style.js"></script>
+</body>
+</html> 

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2DAA6D;
+    color: #5f5f5f;
+}
+
+.bloco{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 320px;
+    position: relative;
+}
+
+.bloco h1{
+    color: #2DAA6D;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+input{
+    background-color: #DDDDDD;
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    color: #484848;
+    font-size: 12px;
+}
+
+button{
+    background-color: #36D286;
+    border: none;
+    padding: 0.7rem 1rem;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: #2DAA6D;
+}
+
+.nomeIdade{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nome{
+    width: 65%;
+}
+
+.idade{
+    width: 30%;
+}
+
+.radio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+p{
+    margin: 10px 0 5px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-between;
+}
+
+img{
+    width: 150px;
+    height: 90px;
+    position: absolute;
+    top: -90px;
+    transform: translateX(40%);
+}

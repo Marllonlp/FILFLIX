@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/padrao.css">
+    <link rel="shortcut icon" href="imagens2/logo.png" type="image/x-icon">
+</head>
+<body id="F3">
+    <script src="javascript\style.js"></script>
+    <br/>
+    <form>
+    <h1 id="titulo3">Registro de vacinação</h1><br><br>
+    <div class="for3">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Nome" autocomplete="on"> 
+        <input type="text" id="nome" name="nome" placeholder="Sobrenome" autocomplete="on"> <br/><br/>
+        
+        <label for = "cpf">CPF</label>
+        <input type="text" id="cpf" placeholder="000.000.000-00" required pattern="[0-9]+$"> <br/><br/>
+  
+
+        <label for = "data">Data de Nascimento</label> <input type="date" id="data" required>  <br/><br/>
+    
+    <label for = "Genero">Genero</label><br/>
+    <input type="radio" name="Genero" value="male"> Masculino<br>
+    <input type="radio" name="Genero" value="female"> Feminino<br/><br/>
+
+    <label for = "tel">Tel</label>
+    <input type="tel" id="tel" placeholder="(xx) xxxxxxxxx" required pattern="[0-9]+$">
+    </div>
+
+    <div class="for3">
+    <label for="Endereço">Endereço</label>
+    <input type="text" id="Endereço" name="Endereço" placeholder="Endereço" autocomplete="on" required> <br/>
+    <label for="Estado">Estado</label>
+    <input type="text" id="Estado" name="Estado" placeholder="Estado" autocomplete="on" required> <br/>
+    <label for="Cidade">Cidade</label>
+    <input type="text" id="Cidade" name="Cidade" placeholder="Cidade" autocomplete="on" required> 
+    </div>
+
+    <div class="for3">
+        <label for="Enderço"><h3>Qual os sintomas?</h3></label><br/>
+        <input type="checkbox" name="bike">
+        Perda do paladar ou olfato
+        <br/>
+        <input type="checkbox" name="">
+        febre alta
+        <br/>
+        <input type="checkbox" name="">
+        Dificuldade para respirar
+        <br/>
+        <input type="checkbox" name="">
+        Dores no corpo
+        <br/>
+        <input type="checkbox" name="">
+        Coriza 
+        <br/>
+        <input type="checkbox" name="">
+        Tosse
+        <br/>
+        <input type="checkbox" name="">
+        Diarreia
+        <br/>
+        <input type="checkbox" name="">
+        outros<br/>
+        <button type="submit" value="Enviar">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>

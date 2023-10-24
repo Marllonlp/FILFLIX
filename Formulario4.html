@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/padrao.css">
+    <link rel="shortcut icon" href="imagens2/logo.png" type="image/x-icon">
+</head>
+<body id="F4">
+    <script src="javascript\style.js"></script>
+    <br/><br/>
+    <form>
+    <div class="at">
+        <h1 id = "titulo4">Enviar duvidas</h1>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="off" required>
+    </div>
+
+    <div class="at">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" autocomplete="on" required>
+
+        <div class="for4">
+        <label for="msg">Mensagem</label><br>
+        <textarea id="msg" name="msg" rows="4" cols="50"></textarea>
+        <br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Enviar">
+    </div>
+</form>
+</body>
+</html>

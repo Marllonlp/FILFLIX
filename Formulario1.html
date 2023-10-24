@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+    <link rel = "stylesheet" href="css/padrao.css">
+    <link rel="shortcut icon" href="imagens2/logo.png" type="image/x-icon">
+</head>
+<body id="F1">
+    <script src="javascript\style.js"></script>
+    <br/><br/>
+    <form>
+    <div class="at">
+        <h1 id = "titulo">Dados pessoais</h1>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="off"  required>
+    </div>
+    <div class="at">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" autocomplete="on" required>
+    </div>
+    <div class="at">
+        <label for="tel">Tel</label>
+        <input type="tel" id="Tel" class = "tel" name="tel" required placeholder="(xx) xxxxx-xxxx"  pattern="[0-9]+$">
+    </div>
+    <div class="at">
+            <label>Data de Nascimento</label><br>
+            <label for="data"></label>
+        <input type="date" id="data"><br/>
+ 
+        <label for="estado">Estado</label>
+        <select id="estado" name="estado">
+            <option value="SP">SP</option>
+            <option value="RJ">RJ</option>
+            <option value="PB">PB</option>
+            <option value="PB">MG</option>
+            <option value="PB">GO</option>
+        </select>
+            <br/><br/>
+     </div>      
+     <div class="at">
+            <label>Estado civil</label><br>
+            <label><input type="radio" name="devweb" value="frontend">Solteiro</label>
+            <label><input type="radio" name="devweb" value="backend">Casado</label> 
+           <label><button type="submit" type="submit">Enviar</button></label> 
+    </div>
+</form>
+</body>
+</html>
